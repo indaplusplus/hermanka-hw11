@@ -2,21 +2,16 @@
 #define FILESYSTEM_CONSTANTS_H
 
 #include <vector>
-//#include <cstdint>
 #include <string>
 #include <cryptopp/config.h>
-//#include <cryptopp/dh2.h>
 
-//namespace constants {
 
-  //typedef uint8_t ByteType;
-  typedef std::string HashType;
-  typedef std::vector<byte> BlockType;
+typedef std::string HashType;
+typedef std::vector<byte> BlockType;
 
-  constexpr int BLOCK_SIZE = 1<<10;
-  constexpr int FILESYSTEM_SIZE = 1<<10; //Number of blocks
-  const BlockType emptyBlock = BlockType(BLOCK_SIZE);
+constexpr int BLOCK_SIZE = 1<<10;
+constexpr int FILESYSTEM_SIZE = 1<<10; //Number of blocks
+const BlockType emptyBlock = BlockType(BLOCK_SIZE);
 
-//}
 
 #endif //FILESYSTEM_CONSTANTS_H
